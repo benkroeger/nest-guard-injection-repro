@@ -5,6 +5,6 @@ import { AuthService } from './auth/auth.service';
 @Global()
 @Module({
   providers: [AuthGuard, AuthService],
-  exports: [AuthGuard],
+  exports: [AuthGuard, AuthService],
 })
 export class AuthModule {}
